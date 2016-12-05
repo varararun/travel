@@ -1,0 +1,28 @@
+{
+  "name": "avarghese",
+  "homepage": "https://github.com/arvarghese/arvarghese.github.io",
+  "authors": [
+    "Arun Varghese <avarghese@spireon.com>"
+  ],
+  "description": "personal website",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.6",
+    "font-awesome": "4.6.3",
+    "animate.css": "3.5.1",
+    "wow": "1.1.2",
+    "jquery.stellar": "^0.6.2",
+    "typed.js": "^1.1.4"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 2"
+  }
+}
