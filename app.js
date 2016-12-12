@@ -433,6 +433,15 @@ var Travel = {
                 }
             }
         });
+
+        $('#album').scroll(function(){ 
+          var h = $("#album")[0].scrollHeight;
+          var p = $("#album").height() + $("#album").scrollTop();
+          console.log(h == p);
+          if(p == h){
+            $('.load-more-btn').click();
+          }
+        }); 
     },
     loadNextImage: function(){         
         var index = $('.selected-img').attr('index');
