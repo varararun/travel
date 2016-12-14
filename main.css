@@ -49,10 +49,13 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
   transition: .3s ease-in-out;
   position: relative;
-  width: 40em;
-  height: 20em;
-  margin: .2em;
+  width: 100%;
+  height: 100%;
   box-shadow: .1em .1em .2em 0em rgba(0,0,0,.3);
+}
+
+.album-img {
+  height: 15em;
 }
 
 /*.place:after {
@@ -89,6 +92,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .places-grid {
   width: 100%;
+  height: 100%;
 }
 
 .places-grid,
@@ -233,16 +237,16 @@ hr {
 }
 
 .scrolltop-btn {
-  border: 3px solid #fff;
   color: #fff;
   position: fixed;
   right: 0;
-  bottom: 0;
-  margin: 1em .5em;
+  bottom: 0em;
+  margin: 1.5em 1em;
   cursor: pointer;
   z-index: 5;
-  transition: .8s cubic-bezier(0.83, -0.03, 0.54, 0.99);
-  background: black;
+  transition: .4s cubic-bezier(0.83, -0.03, 0.54, 0.99);
+  text-shadow: 0 0 .5em rgba(0,0,0,.5);
+  opacity: .6;
 }
 
 .scrolltop-btn-hidden {
@@ -250,16 +254,10 @@ hr {
   visibility: none;
 }
 
-.scrolltop-btn>i:hover {
-  color: #111;
-} 
 
 .scrolltop-btn:hover {
-  border: 3px solid rgba(0,0,0,0);  
-  background: transparent;
   transform: scale(1.2);
-  color: #111;
-  transition: .3s;
+  opacity: 1;
 }
 
 .album-info {
