@@ -431,6 +431,7 @@ var Travel = {
                 if(maxLoad < Travel.maxPage) {
                     $('.load-more-btn').remove();
                 }
+                $('.album-img-overlay').click(Travel.loadAlbumImgSelected);
             }
         });
 
