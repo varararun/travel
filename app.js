@@ -481,6 +481,7 @@ var Travel = {
         }, 500); 
     },
     toggleViews: function(){
+        $('#header').toggleClass('header-hidden');
         $('#album').toggleClass('album-hidden');
         $('#places').toggleClass('places-hidden');        
     },
