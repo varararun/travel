@@ -359,7 +359,8 @@ var Travel = {
         $('#album').append('<div class="album-info"><h4 class="album-title"></h4><div class="close-album-btn">Close Album</div>'+
             '<div class="imgur-album-btn"><a href="'+album.link+'">Imgur</a></div></div>');
         $('.album-title').html(album.title + '<br> ('+album.images.length+' images)');
-        var maxLoad = (Travel.albumImages.length < Travel.maxPage) ? Travel.albumImages.length : Travel.maxPage;        
+        // load all or paginate
+        var maxLoad = (Travel.albumImages.length < Travel.maxPage) ? Travel.albumImages.length : Travel.albumImages.length;        
         for (var i=0;i<maxLoad;i++) {
              var albumObj = Travel.albumImages[i];            
              var imgUrl = albumObj.link;
