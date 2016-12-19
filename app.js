@@ -303,6 +303,24 @@ var Travel = {
         $('.album-btn').click(Travel.getImgurAlbumData);
         $('.scrolltop-btn').click(Travel.scrollTop); 
         $(window).scroll(Travel.scrollListener); 
+        $.scrollify({
+            section : ".place",
+            sectionName : ".place",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {}
+        });
 	},
 	showContent: function(){
 		$(this).find('.content').toggleClass('content-visible');
@@ -315,7 +333,7 @@ var Travel = {
 		}
 	},
     loadPlace:function(key, place){
-        $('#places').append('<div id="'+key+'" class="place wow fadeIn">'+
+        $('#places').append('<div id="'+key+'" id="'+key+'" class="place">'+
             '<div class="content">'+
             '<h2 class="place-title wow fadeInUp">'+place.name+'</h2>'+
             '<span class="place-date wow fadeInUp">'+place.date+'</span>'+
