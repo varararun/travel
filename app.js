@@ -317,8 +317,8 @@ var Travel = {
     loadPlace:function(key, place){
         $('#places').append('<div id="'+key+'" class="place wow fadeIn">'+
             '<div class="content">'+
-            '<h2 class="place-title">'+place.name+'</h2>'+
-            '<span class="place-date">'+place.date+'</span>'+
+            '<h2 class="place-title wow fadeInUp">'+place.name+'</h2>'+
+            '<span class="place-date wow fadeInUp">'+place.date+'</span>'+
             (place.thumbnail ? 
                 '<div class="buttons">'+
                 '<div class="album-btn" album-id="'+place.albumId+'">Album</div>'+
@@ -482,6 +482,7 @@ var Travel = {
     },
     toggleViews: function(){
         $('#header').toggleClass('header-hidden');
+        $('#footer').toggleClass('footer-hidden');
         $('#album').toggleClass('album-hidden');
         $('#places').toggleClass('places-hidden');        
     },

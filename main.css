@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: .3em 0.5em;
+  margin: 10px;
   font-size: .8em;
 }
 
@@ -137,12 +137,10 @@ h1,h2,h3,h4,h5,h6 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 0;
-  padding: 1em .2em;
+  margin: 30px 10px;
   font-size: 2.5em;
   font-weight: 600 !important;
   letter-spacing: .1em;
-  }
 }
 
 .background {
@@ -219,10 +217,6 @@ hr {
   transform: rotate(360deg) scale(1.2);
 }
 
-.copyright {
-  font-size: 1.3em !important;
-}
-
 .imgur-album-btn,
 .close-album-btn,
 .load-more-btn {
@@ -252,12 +246,12 @@ hr {
 .scrolltop-btn {
   color: #fff;
   position: fixed;
-  right: 0;
-  bottom: 0em;
-  margin: 1.5em 1em;
+  left: 50%;
+  bottom: 1em;
+  transform: translate(-50%,0);
   cursor: pointer;
   z-index: 5;
-  transition: .4s cubic-bezier(0.83, -0.03, 0.54, 0.99);
+  transition: .4s ease-in-out;
   text-shadow: 0 0 .5em rgba(0,0,0,.5);
   opacity: .6;
 }
@@ -265,11 +259,11 @@ hr {
 .scrolltop-btn-hidden {
   opacity: 0;
   visibility: none;
+  bottom: -2.5em;
 }
 
 
 .scrolltop-btn:hover {
-  transform: scale(1.2);
   opacity: 1;
 }
 
@@ -408,16 +402,21 @@ hr {
   position: fixed;
   color: white;
   padding: .5em;
+  /*background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4), transparent);*/
+  width: 100%;
+  height: 4em;
 }
 
 .header-hidden {
   opacity: 0;
   visibility: hidden;
+  transform: translateY(-100%);
 }
 #header>.title {
   position: fixed;
-  top: .5em;
-  left: .5em;
+  top: 0;
+  left: 0;
+  padding: 0 .2em;
   margin: 0;
   font-size: 2.5em;
   font-weight: 600;
@@ -429,15 +428,25 @@ hr {
   right: 0;
   top: 0;
   margin: 0;
-  padding: .5em;
   font-size: 2em;
   font-weight: 300;
+  padding: 0.1em .2em;
 }
 
-#header>.copyright {
+#footer {
   position: fixed;
   bottom: .5em;
   left: .5em;
+  font-size: 1em;
+  color: white;
+  z-index: 6;
+  transition: .4s ease-in-out;
+}
+
+.footer-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(120%);
 }
 
 @media (max-width: 568px) {
@@ -454,8 +463,23 @@ hr {
   .link-btn>div {
     display: none;
   }
+  #header {
+    background: transparent;
+  }
   #header>.follow-btn>.text,
-  #header>.title {
+  #header>.title,
+  .copyright {
     display: none;
   }
+  .buttons {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: initial;
+    transform: translate(0%, 0%);
+    margin: 10px 5px;
+  }
+  .content>.place-title {
+    max-width: 10em;
+  }  
 }
