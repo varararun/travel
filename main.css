@@ -189,7 +189,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 9em;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 1.5em;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
@@ -217,11 +217,24 @@ hr {
   transform: rotate(360deg) scale(1.2);
 }
 
+.album-info {
+  width: 100%;
+  z-index: 5;
+  text-align: center;
+}
+
+.album-title {
+  padding: 0.5em;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 600 !important;
+  letter-spacing: .1em;
+}
+
 .imgur-album-btn,
 .close-album-btn,
 .load-more-btn {
-  cursor: pointer;
-  width: 100%;
+  cursor: pointer !important;
   text-align: center;
   border: 3px solid #111;
   padding: .5em;
@@ -230,7 +243,6 @@ hr {
   font-weight: 600;
   text-transform: uppercase;
   font-size: .8em;
-  cursor: pointer;
   transition: .3s ease-in-out;
   margin: 0.5em auto;
 }
@@ -265,11 +277,6 @@ hr {
 
 .scrolltop-btn:hover {
   opacity: 1;
-}
-
-.album-info {
-  width: 100%;
-  text-align: center;
 }
 
 .album-img-overlay {
@@ -384,18 +391,13 @@ hr {
 
 .load-more-btn {
   position: absolute;
-  bottom: 2em;
+  bottom: 4em;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.load-more-btn:hover {
-  border: 3px solid rgba(0,0,0,0);  
-  transition: .3s;
-}
-
 #album {
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 }
 
 #header {
@@ -482,4 +484,8 @@ hr {
   .content>.place-title {
     max-width: 10em;
   }  
+  .blog-btn, 
+  .album-btn {
+    font-size: .8em;
+  }
 }
