@@ -358,7 +358,7 @@ var Travel = {
         $('#album').empty();              
         $('#album').append('<div class="album-info"><h4 class="album-title"></h4><div class="close-album-btn">Close Album</div>'+
             '<div class="imgur-album-btn"><a href="'+album.link+'">Imgur</a></div></div>');
-        $('.album-title').html(album.title + ' ('+album.images.length+' images)');
+        $('.album-title').html(album.title + '<br> ('+album.images.length+' images)');
         var maxLoad = (Travel.albumImages.length < Travel.maxPage) ? Travel.albumImages.length : Travel.maxPage;        
         for (var i=0;i<maxLoad;i++) {
              var albumObj = Travel.albumImages[i];            
