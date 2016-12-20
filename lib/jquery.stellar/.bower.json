@@ -15,6 +15,6 @@
     "commit": "1674d3bc90e78c7c0f9a133f7c427732dce6050e"
   },
   "_source": "https://github.com/markdalgleish/stellar.js.git",
-  "_target": "^0.6.2",
+  "_target": "0.6.2",
   "_originalSource": "jquery.stellar"
 }

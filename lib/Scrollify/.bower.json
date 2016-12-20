@@ -32,7 +32,6 @@
     "commit": "e7e65bbd7208032266deee8cc635f5932be561a7"
   },
   "_source": "https://github.com/lukehaas/Scrollify.git",
-  "_target": "^1.0.9",
-  "_originalSource": "Scrollify",
-  "_direct": true
+  "_target": "1.0.9",
+  "_originalSource": "Scrollify"
 }
