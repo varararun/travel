@@ -490,11 +490,11 @@ hr {
 }
 
 .previous-place-btn {
-  top: 45%;
+  top: 25%;
 }
 
 .next-place-btn {
-  top: 55%;
+  top: 75%;
 }
 
 @media (max-width: 568px) {
