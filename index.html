@@ -13,7 +13,7 @@
     <link href="lib/animate.css/animate.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="scrolltop-btn scrolltop-btn-hidden"><i class="fa fa-fw fa-2x fa-arrow-up"></i></div>
+    <div class="scrolltop-btn scrolltop-btn-hidden"><i class="fa fa-fw fa-4x fa-angle-up"></i></div>
 	<section id="header" class="text-center wow fadeIn">
 		<span class="title wow fadeInDown">TRAVEL</span>
 		<span class="follow-btn fadeInDown">
@@ -22,8 +22,10 @@
 		</span>            
 	</section>
 	<section id="places" class="places-grid">
-     <a onclick="$.scrollify.next();" class="place-nav-btn next-place-btn"><i class="fa fa-angle-down"></i></a>   
-     <a onclick="$.scrollify.previous();" class="place-nav-btn previous-place-btn"><i class="fa fa-angle-up"></i></a>   
+     <div class="place-nav-btns hidden">
+        <a onclick="$.scrollify.next();" class="place-nav-btn next-place-btn"><i class="fa fa-angle-down"></i></a>   
+        <a onclick="$.scrollify.previous();" class="place-nav-btn previous-place-btn"><i class="fa fa-angle-up"></i></a>   
+     </div>
     </section>
     <section id="album" class="album-grid album-hidden"></section>
     <section id="album-img-selected" class="album-img-selected album-img-selected-hidden"></section>

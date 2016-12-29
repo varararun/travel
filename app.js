@@ -308,7 +308,8 @@ var Travel = {
 		Travel.loadEvents();
 	},
 	loadEvents: function(){
-		$('.place').click(Travel.showContent);		
+    // click effect on album bg
+		// $('.place').click(Travel.showContent);
 		$('.place').on('mousemove', Travel.panImage);
         $('.album-btn').click(Travel.getImgurAlbumData);
         $('.scrolltop-btn').click(Travel.scrollTop); 
@@ -388,7 +389,7 @@ var Travel = {
         $('#album').append('<div class="album-info"><h4 class="album-title"></h4><div class="close-album-btn">Close Album</div>'+
             '<div class="imgur-album-btn"><a href="'+album.link+'">Imgur</a></div></div>');
         $('.album-title').html(album.title + '<br> ('+album.images.length+' images)');
-        // load all or paginate
+        // load all or paginate, curremntly loading all
         var maxLoad = (Travel.albumImages.length < Travel.maxPage) ? Travel.albumImages.length : Travel.albumImages.length;        
         for (var i=0;i<maxLoad;i++) {
              var albumObj = Travel.albumImages[i];            
