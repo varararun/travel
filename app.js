@@ -2,8 +2,8 @@ var Travel = {
     maxPage: 15,
     albumImages:[],
 	places: {  
-       "Tahiti":{  
-          "name":"Tahiti",
+       "FrenchPolynesia":{  
+          "name":"French Polynesia",
           "date":"December 24th 2016",
           "description":"a description",
           "thumbnail":"http://i.imgur.com/m6SQFJQh.jpg",
@@ -11,7 +11,7 @@ var Travel = {
           "tags":"",
           "places":"",
           "album":"http://imgur.com/a/CzjgH",
-          "blog":"http://avarghese.me/blog/travel/2016/12/24/tahiti.html",
+          "blog":"http://avarghese.me/blog/travel/2016/12/24/french-polynesia.html",
           "albumId":"CzjgH"
        },
        "Phuket":{  
@@ -337,18 +337,7 @@ var Travel = {
 		$(this).find('.content').toggleClass('content-visible');
 		$(this).find('.background').toggleClass('background-covered');
 	},
-	loadPlaces: function(places){
-        $.ajax({
-            url:'https://www.dropbox.com/s/8w878p55fuw8eur/travel.json?dl=0',            
-            type: 'GET',
-            dataType: 'json',
-            error: function() {                
-                console.info('Unable to retrieve travel data from dropbox, using old data instead.');                
-            },
-            success: function(data) {
-                Travel.places = data.travel;
-            }
-        });
+	loadPlaces: function(){
 		for (var key in Travel.places) {
 			var place = Travel.places[key];
 			Travel.loadPlace(key.toLowerCase(), place);
