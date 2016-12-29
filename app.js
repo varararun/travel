@@ -4,6 +4,18 @@ var Travel = {
     maxPage: 15,
     albumImages:[],
 	places: {
+    "Tahiti": {
+        "name": "Tahiti",
+        "date": "December 24th 2016",
+        "description": "a description",
+        "thumbnail": "http://i.imgur.com/m6SQFJQh.jpg",
+        "rank": 2,
+        "tags": "",
+        "places": "",
+        "album": "http://imgur.com/a/CzjgH",
+        "blog":"http://avarghese.me/blog/travel/2016/12/24/tahiti.html",
+        "albumId":"CzjgH"
+     },
     "Phuket": {
         "name": "Phuket",
         "date": "November 22nd 2016",
