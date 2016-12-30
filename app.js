@@ -473,7 +473,7 @@ var Travel = {
           }
         }); 
         $('.album-img').click(function(){                    
-          if($(this).find('.album-img-overlay').css('display') !== 'none'){
+          if($(this).find('.album-img-overlay').css('display') !== 'none' || true){
             return;
           }          
           var imgUrl = $(this).css('background-image');
