@@ -503,7 +503,7 @@ hr {
 (max-height: 400px) {
   .place,
   .album-img {
-    height: 12em;
+    height: 18em;
   }
   .album-img-overlay {
     display: none;
