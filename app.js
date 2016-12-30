@@ -1,7 +1,6 @@
 var Travel = {
   maxPage: 15,
-  albumImages:[],
-  placesIndex: {},
+  albumImages:[],  
 	initialize: function(){
 		Travel.loadPlaces();
 		Travel.loadEvents();
@@ -31,22 +30,6 @@ var Travel = {
         afterResize:function() {},
         afterRender:function() {}
     });
-    $('.search>i').click(function(){
-      $('.search').toggleClass('search-visible');
-      $('.search>input').val('');
-    });
-    $('.search>input').keyup(function () {        
-      var key = $(this).val().toLowerCase().trim().replace(/[^a-zA-Z]+/g, '');      
-      if(key.length < 4){
-        return;
-      }
-      for(place of Object.keys(Travel.places)){        
-        if(place.includes(key)){
-          $.scrollify.move(Travel.placesIndex[place]);
-          break;
-        }        
-      }       
-    }); 
     new WOW().init();
 	},
 	showContent: function(){
@@ -57,14 +40,24 @@ var Travel = {
     var i = 0;
 		for (var key in Travel.places) {
 			var place = Travel.places[key];
-			Travel.loadPlace(key.toLowerCase(), place);
-      Travel.placesIndex[key] = i++;      
+			Travel.loadPlace(i+1, key.toLowerCase(), place);
+      $('.places-select').append($('<option>', {value:i, text:place.name}));
+      i++;
 		}
+    $('.places-select').change(function(){        
+      $('.search>i').click();
+      $.scrollify.move(parseInt($(".places-select").val()));
+      $(".places-select")[0].selectedIndex = 0;
+    });
 	},
-  loadPlace:function(key, place){
+  loadPlace:function(index, key, place){
       $('#places').append('<div id="'+key+'" id="'+key+'" class="place">'+
-          '<div class="content content-visible">'+
-          '<h2 class="place-title wow fadeInUp">'+place.name+'</h2>'+
+          '<div class="content content-visible">'+          
+          '<h2 class="place-title wow fadeInUp">'+
+          `[${index}/${Object.keys(Travel.places).length}]` +
+          '<br>'+
+          place.name+
+          '</h2>'+
           '<span class="place-date wow fadeInUp">'+place.date+'</span>'+
           (place.thumbnail ? 
               '<div class="buttons">'+
