@@ -359,12 +359,12 @@ var Travel = {
             '</div>'
         );  
     },
-	panImage: function(e){
-      $(this).children('.background').css({
-      	'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + 
-      	'% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'      	
-      });
-	},
+  	panImage: function(e){
+        $(this).children('.background').css({
+        	'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + 
+        	'% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'      	
+        });
+  	},
     getImgurAlbumData: function() {         
          Travel.toggleViews();
          Travel.resetAlbum();
@@ -402,7 +402,7 @@ var Travel = {
         if(Travel.albumImages.length > Travel.maxPage) {
             $('#album').append('<div class="load-more-btn">Load More</div>');
         }        
-        $('.album-img-overlay').click(Travel.loadAlbumImgSelected);
+        //$('.album-img-overlay').click(Travel.loadAlbumImgSelected);
         $('.close-album-btn').click(Travel.closeAlbum); 
         Travel.loadAlbumEvents();
     },
@@ -474,6 +474,17 @@ var Travel = {
             $('.load-more-btn').click();
           }
         }); 
+
+        $('.album-img').click(function(){          
+          var imgUrl = $(this).css('background-image');
+          if(imgUrl.includes('h.jpg')){
+            imgUrl = imgUrl.replace('h.jpg', '.jpg');
+          } else {
+            imgUrl = imgUrl.replace('.jpg', 'h.jpg');
+          }          
+          $(this).css('background-image', imgUrl);
+          $(this).toggleClass('album-img-select');
+        });
     },
     loadNextImage: function(){         
         var index = $('.selected-img').attr('index');
