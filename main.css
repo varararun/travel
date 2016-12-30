@@ -422,6 +422,7 @@ hr {
   visibility: hidden;
   transform: translateY(-100%);
 }
+
 #header>.title {
   position: fixed;
   top: 0;
@@ -431,6 +432,42 @@ hr {
   font-size: 2.5em;
   font-weight: 600;
   letter-spacing: .1em;
+}
+
+#header>.search {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  padding: 0 .2em;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  transform: translateX(-50%);
+}
+
+#header>.search>i {
+  cursor: pointer;
+}
+
+#header>.search>input {
+  outline: none;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: .1em solid white;
+  border-radius: .2em;
+  max-width: 75%;
+  text-align: center;
+  width: 0;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  /*box-shadow: 0em 0em 1em .2em rgba(0,0,0,.5);*/
+}
+
+.search-visible input {
+  width: 100% !important;
+  opacity: 1 !important;
 }
 
 #header>.follow-btn {
@@ -495,9 +532,13 @@ hr {
 .place-date,
 .follow-btn,
 .album-btn,
-.blog-btn {
+.blog-btn,
+#header>.title,
+#header>.search,
+#header>.search>input {
   text-shadow: 0 0 .2em rgba(0,0,0,.8);
 }
+
 @media handheld,
 (max-width: 640px),
 (max-height: 400px) {
@@ -515,8 +556,8 @@ hr {
     background: transparent;
   }
   #header>.follow-btn>.text,
-  #header>.title,
-  .copyright {
+  .copyright,
+  #header>.title {
     display: none;
   }
   .content>.place-title {
@@ -532,5 +573,10 @@ hr {
     left: 0;
     text-align: left;
     right: initial;
+  }
+  #header>.search {
+    left: 0;
+    transform: translateX(0);
+    text-align: left;
   }
 }
