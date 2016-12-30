@@ -402,7 +402,7 @@ var Travel = {
         if(Travel.albumImages.length > Travel.maxPage) {
             $('#album').append('<div class="load-more-btn">Load More</div>');
         }        
-        //$('.album-img-overlay').click(Travel.loadAlbumImgSelected);
+        $('.album-img-overlay').click(Travel.loadAlbumImgSelected);
         $('.close-album-btn').click(Travel.closeAlbum); 
         Travel.loadAlbumEvents();
     },
@@ -465,19 +465,20 @@ var Travel = {
                 $('.album-img-overlay').click(Travel.loadAlbumImgSelected);
             }
         });
-
         $('#album').scroll(function(){ 
           var h = $("#album")[0].scrollHeight;
-          var p = $("#album").height() + $("#album").scrollTop();
-          console.log(h == p);
+          var p = $("#album").height() + $("#album").scrollTop();          
           if(p == h){
             $('.load-more-btn').click();
           }
         }); 
-
-        $('.album-img').click(function(){          
+        $('.album-img').click(function(){                    
+          if($(this).find('.album-img-overlay').css('display') !== 'none'){
+            return;
+          }          
           var imgUrl = $(this).css('background-image');
-          if(imgUrl.includes('h.jpg')){
+          var stringUrl = imgUrl.substring(25, imgUrl.length-2);
+          if(stringUrl.length === 12 && stringUrl.includes('h.jpg')){
             imgUrl = imgUrl.replace('h.jpg', '.jpg');
           } else {
             imgUrl = imgUrl.replace('.jpg', 'h.jpg');
