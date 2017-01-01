@@ -41,7 +41,8 @@ var Travel = {
 		for (var key in Travel.places) {
 			var place = Travel.places[key];
 			Travel.loadPlace(i+1, key.toLowerCase(), place);
-      $('.places-select').append($('<option>', {value:i, text:place.name}));
+      var year = place.date.substring(place.date.length-4,place.date.length);
+      $('.places-select').append($('<option>', {value:i, text:`${place.name} ${year}`}));
       i++;
 		}
     $('.places-select').change(function(){       
