@@ -346,7 +346,7 @@ hr {
 }
 
 .selected-img {
-  width: 90%;
+  width: 100%;
   height: 60em;
   position: absolute;
   left: 50%;
@@ -380,6 +380,7 @@ hr {
   color: rgba(255,255,255,.7);
   padding: .5em .6em;
   cursor: pointer;
+  z-index: 5;
 }
 
 .close-selected-img-btn:hover {
@@ -516,7 +517,8 @@ hr {
 
 .album-img>.img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: none;
 }
 
 .album-img-selected {
@@ -528,27 +530,39 @@ hr {
 @media handheld,
 (max-width: 640px),
 (max-height: 400px) {
-  .album-img-overlay {
-    display: none;
-  }
-  .link-btn>div {
-    display: none;
-  }
-  #header {
-    background: transparent;
-  }
-  #header>.places-select {
-    left: 0;
-    transform: translateX(0);
-    text-align: left;
-  }
-  .search-visible select {
-    width: 75% !important;
-  }
-  .follow-btn>.text,
-  .copyright,
-  span>.text {
-    display: none;
-  }
+    .album-img-overlay {
+      display: none;
+    }
+    .link-btn>div {
+      display: none;
+    }
+    #header {
+      background: transparent;
+    }
+    #header>.places-select {
+      left: 0;
+      transform: translateX(0);
+      text-align: left;
+    }
+    .search-visible select {
+      width: 75% !important;
+    }
+    .follow-btn>.text,
+    .copyright,
+    span>.text {
+      display: none;
+    }
+    .album-grid>div {
+      height: auto;
+      width: 100%;
+    }
+    .album-img>.img {
+      width: 100%;
+      height: auto;
+      display: initial;
+    }
+    .album-info {
+      height: 20em !important;
+    }
   }
 }

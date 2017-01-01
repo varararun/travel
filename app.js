@@ -122,10 +122,16 @@ var Travel = {
   },
   loadAlbumImg: function(index, thumbnail, url){
       $('#album').append(                
-              '<div class="album-img">'+
+              '<div class="album-img" style="background: url('+thumbnail+');">'+
               `<img src="${thumbnail}" class="img">`+
               '<a href="'+url+'" class="link-btn">'+
-              '<div>'
+              '<div>'+
+              '<i class="fa fa-2x fa-picture-o"></i>'+
+              '</div>'+
+              '</a>'+
+              '<div class="album-img-overlay" album-img-index="'+index+'" img-url="'+url+'">'+                                                
+              '</div>'+
+              '</div>' 
             );
   },
   loadAlbumEvents: function(){
