@@ -56,18 +56,16 @@ var Travel = {
   loadPlace:function(index, key, place){
       $('#places').append('<div id="'+key+'" id="'+key+'" class="place">'+
           '<div class="content content-visible">'+
-          '<div class="place-details">'+
-          '<div class="place-index wow fadeInUp">'+`[${index}/${Object.keys(Travel.places).length}]`+'</div>' +          
-          '<div class="place-title wow fadeInUp">'+
-          place.name+
-          '</div>'+
-          '<div class="place-date wow fadeInUp">'+place.date+'</div>'+
-          '</div>'+
           (place.thumbnail ? 
-              '<div class="buttons">'+
-              '<div class="album-btn" album-id="'+place.albumId+'">Album</div>'+
+              '<div class="place-details">'+              
+              '<div class="place-title wow fadeInUp">'+
+               place.name+
+              '</div>'+
+              '<div class="place-date wow fadeInUp">'+place.date+'</div>'+
+              '<div class="album-btn wow fadeIn" album-id="'+place.albumId+'">Album</div>'+
               (place.blog ? 
-                  '<a href="'+place.blog+'"><div class="blog-btn">Blog</div></a>' : '')+
+              '<a href="'+place.blog+'"><div class="blog-btn wow fadeIn">Blog</div></a>' : '')+              
+              '<div class="place-index wow fadeInUp">'+`[${index}/${Object.keys(Travel.places).length}]`+'</div>' +          
               '</div></div>'+
               '<div class="background background-covered" style="background: url('+place.thumbnail+');"></div>' : 'COMING SOON')+
           '</div>'
