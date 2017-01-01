@@ -101,9 +101,10 @@ var Travel = {
       Travel.albumImages = album.images;
       $('#album').addClass('album-loaded');
       $('#album').empty();              
-      $('#album').append('<div class="album-info"><h4 class="album-title"></h4><div class="close-album-btn">Close Album</div>'+
-          '<div class="imgur-album-btn"><a href="'+album.link+'">Imgur</a></div></div>');
-      $('.album-title').html(album.title + '<br> ('+album.images.length+' images)');
+      $('#album').append('<div class="album-info"><div class="album-info-container"><div class="album-title"></div><div class="album-count"></div><div class="close-album-btn">Close Album</div>'+
+          '<div class="imgur-album-btn"><a href="'+album.link+'">Imgur</a></div></div></div>');
+      $('.album-title').html(album.title);
+      $('.album-count').html(`(${album.images.length} images)`);
       // load all or paginate, curremntly loading all
       var maxLoad = (Travel.albumImages.length < Travel.maxPage) ? Travel.albumImages.length : Travel.albumImages.length;        
       for (var i=0;i<maxLoad;i++) {
