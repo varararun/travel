@@ -80,8 +80,7 @@ var Travel = {
   loadAlbumData: function() { 
        $.scrollify.disable();        
        Travel.toggleViews();
-       Travel.resetAlbum();
-       Travel.scrollTop();    
+       Travel.resetAlbum();    
        $.ajax({
           url:'https://api.imgur.com/3/album/' + $(this).attr('album-id'),
           headers: {"Authorization":"Client-ID a52210b6349e55a"},
@@ -91,6 +90,7 @@ var Travel = {
               console.error('unable to retrieve album from Imgur...');
           },
           success: function(album) {
+              Travel.scrollTop();
               Travel.loadAlbum(album.data);
           }
       });
@@ -122,15 +122,10 @@ var Travel = {
   },
   loadAlbumImg: function(index, thumbnail, url){
       $('#album').append(                
-              '<div class="album-img" style="background: url('+thumbnail+');">'+
+              '<div class="album-img">'+
+              `<img src="${thumbnail}" class="img">`+
               '<a href="'+url+'" class="link-btn">'+
-              '<div>'+
-              '<i class="fa fa-2x fa-picture-o"></i>'+
-              '</div>'+
-              '</a>'+
-              '<div class="album-img-overlay" album-img-index="'+index+'" img-url="'+url+'">'+                                                
-              '</div>'+
-              '</div>'                
+              '<div>'
             );
   },
   loadAlbumEvents: function(){
@@ -251,8 +246,12 @@ var Travel = {
           $('.scrolltop-btn').addClass('scrolltop-btn-hidden');
       }
   },
-  scrollTop: function(){
-      $('body').animate({ scrollTop: 0 }, "slow");
+  scrollTop: function(quick){
+      if(!quick){
+        $('body').scrollTop(0);
+      } else {
+        $('body').animate({ scrollTop: 0 }, "slow");
+      }
   },
   loadAlbumImgSelected: function(){
       $('#album-img-selected').removeClass('album-img-selected-hidden');
