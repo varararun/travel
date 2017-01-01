@@ -9,7 +9,7 @@ var Travel = {
     // click effect on album bg
 		// $('.place').click(Travel.showContent);
 		$('.place').on('mousemove', Travel.panImage);
-    $('.album-btn').click(Travel.getImgurAlbumData);
+    $('.album-btn').click(Travel.loadAlbumData);
     $('.scrolltop-btn').click(Travel.scrollTop); 
     $(window).scroll(Travel.scrollListener); 
     $.scrollify({
@@ -79,7 +79,8 @@ var Travel = {
       	'% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'      	
       });
 	},
-  getImgurAlbumData: function() {         
+  loadAlbumData: function() { 
+       $.scrollify.disable();        
        Travel.toggleViews();
        Travel.resetAlbum();
        Travel.scrollTop();    
@@ -230,6 +231,7 @@ var Travel = {
       }, 1000); 
   },
   closeAlbum: function(){
+      $.scrollify.enable();
       $('#header').show();
       Travel.toggleViews();
       setTimeout(function(){
