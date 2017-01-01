@@ -100,14 +100,6 @@ h1,h2,h3,h4,h5,h6 {
   position: absolute;
 }
 
-.place-date {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-  font-size: .8em;
-}
-
 .content {
   visibility: hidden;
   opacity: 0;
@@ -126,15 +118,29 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0em 0em 1em .2em rgba(0,0,0,.5);
 }
 
-.content>.place-title {
+.content>.place-details {
   text-align: right;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 30px 10px;
-  font-size: 2.5em;
-  font-weight: 600 !important;
+  margin: 1em .8em;
   letter-spacing: .1em;
+  max-width: 50%;
+}
+
+.content>.place-details>.place-index {
+  font-size: 1.5em;
+  font-weight: 400 !important;
+  letter-spacing: 0.3em;
+}
+
+.content>.place-details>.place-title {
+  font-size: 2.1em;
+  font-weight: 600 !important;
+}
+
+.content>.place-details>.place-date {
+  font-size: 1.1em;
 }
 
 .background {
@@ -160,7 +166,7 @@ h1,h2,h3,h4,h5,h6 {
 .buttons {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
 }
 
@@ -497,11 +503,10 @@ hr {
   top: 75%;
 }
 
-.place-title,
-.place-date,
 .follow-btn,
 .album-btn,
 .blog-btn,
+.content>.place-details,
 #header>.places-select {
   text-shadow: 0 0 .2em rgba(0,0,0,.8);
 }
@@ -522,7 +527,7 @@ hr {
   #header {
     background: transparent;
   }
-  .content>.place-title {
+  .content>.place-details {
     max-width: 75%;
   }  
   .scrolltop-btn {
@@ -530,8 +535,7 @@ hr {
     left: initial;
     transform: translate(0,0);
   }
-  .content>.place-title,
-  .content>.place-date {
+  .content>.place-details {
     left: 0;
     text-align: left;
     right: initial;

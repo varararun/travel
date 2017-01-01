@@ -44,21 +44,24 @@ var Travel = {
       $('.places-select').append($('<option>', {value:i, text:place.name}));
       i++;
 		}
-    $('.places-select').change(function(){        
-      $('.search>i').click();
+    $('.places-select').change(function(){       
+      if($(".places-select")[0].selectedIndex === 0){
+        return;
+      }       
       $.scrollify.move(parseInt($(".places-select").val()));
       $(".places-select")[0].selectedIndex = 0;
     });
 	},
   loadPlace:function(index, key, place){
       $('#places').append('<div id="'+key+'" id="'+key+'" class="place">'+
-          '<div class="content content-visible">'+          
-          '<h2 class="place-title wow fadeInUp">'+
-          `[${index}/${Object.keys(Travel.places).length}]` +
-          '<br>'+
+          '<div class="content content-visible">'+
+          '<div class="place-details">'+
+          '<div class="place-index wow fadeInUp">'+`[${index}/${Object.keys(Travel.places).length}]`+'</div>' +          
+          '<div class="place-title wow fadeInUp">'+
           place.name+
-          '</h2>'+
-          '<span class="place-date wow fadeInUp">'+place.date+'</span>'+
+          '</div>'+
+          '<div class="place-date wow fadeInUp">'+place.date+'</div>'+
+          '</div>'+
           (place.thumbnail ? 
               '<div class="buttons">'+
               '<div class="album-btn" album-id="'+place.albumId+'">Album</div>'+
@@ -503,7 +506,7 @@ var Travel = {
       "albumId":"AHnS7"
    },
    "eastcoasts":{  
-      "name":"East Coast Roadtrip going South",
+      "name":"East Coast Roadtrip S",
       "date":"April 23rd 2015",
       "description":"a description",
       "thumbnail":"http://i.imgur.com/7iQpKc8h.jpg",
@@ -527,7 +530,7 @@ var Travel = {
       "albumId":"wF1UV"
    },
    "eastcoastn":{  
-      "name":"East Coast Roadtrip going North",
+      "name":"East Coast Roadtrip N",
       "date":"November 8th 2014",
       "description":"a description",
       "thumbnail":"http://i.imgur.com/Em5c4kdh.jpg",
