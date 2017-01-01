@@ -64,10 +64,10 @@ var Travel = {
               '<div class="place-date wow fadeInUp">'+place.date+'</div>'+
               '<div class="album-btn wow fadeIn" album-id="'+place.albumId+'">Album</div>'+
               (place.blog ? 
-              '<a href="'+place.blog+'"><div class="blog-btn wow fadeIn">Blog</div></a>' : '')+              
-              '<div class="place-index wow fadeInUp">'+`[${index}/${Object.keys(Travel.places).length}]`+'</div>' +          
-              '</div></div>'+
-              '<div class="background background-covered" style="background: url('+place.thumbnail+');"></div>' : 'COMING SOON')+
+                '<a href="'+place.blog+'"><div class="blog-btn wow fadeIn">Blog</div></a>' : '')+              
+                '<div class="place-index fadeInUp">'+`[${index}/${Object.keys(Travel.places).length}]`+'</div>' +          
+                '</div></div>'+
+                '<div class="background background-covered" style="background: url('+place.thumbnail+');"></div>' : 'COMING SOON')+
           '</div>'
       );  
   },
