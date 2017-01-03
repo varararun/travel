@@ -374,7 +374,7 @@ hr {
 }
 
 .close-selected-img-btn {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   color: rgba(255,255,255,.7);
