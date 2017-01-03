@@ -444,6 +444,10 @@ hr {
   width: 5.7em;
 }
 
+#header>.places-select>option {
+  color: black;
+}
+
 #header>.follow-btn {
   position: fixed;
   right: 0;
