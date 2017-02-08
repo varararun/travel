@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title></travel></title>
+    <title>
+        </travel>
+    </title>
     <link href="public/images/favicon.ico" rel="icon" type="image/png">
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel=
-    "stylesheet">
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/travel.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="scrolltop-btn scrolltop-btn-hidden"><i class="fa fa-fw fa-4x fa-angle-up"></i></div>
-	<section id="header" class="text-center fadeIn">
-		<select class="places-select">
+    <section id="header" class="text-center fadeIn">
+        <select class="places-select">
                 <option value="0">TRAVEL</option>
-            </select>            
+            </select>
         </span>
-		<span class="follow-btn">
+        <span class="follow-btn">
 			<span class="text">Follow me on</span>
-			<a href="https://www.instagram.com/var_arun/"><i class="fa fa-fw fa-lg fa-instagram"></i></a>
-		</span>            
-	</section>
-	<section id="places" class="places-grid">
-     <div class="place-nav-btns hidden">
-        <a onclick="$.scrollify.next();" class="place-nav-btn next-place-btn"><i class="fa fa-angle-down"></i></a>   
-        <a onclick="$.scrollify.previous();" class="place-nav-btn previous-place-btn"><i class="fa fa-angle-up"></i></a>   
-     </div>
+        <a href="https://www.instagram.com/var_arun/"><i class="fa fa-fw fa-lg fa-instagram"></i></a>
+        </span>
+    </section>
+    <section id="places" class="places-grid">
+        <div class="place-nav-btns hidden">
+            <a onclick="$.scrollify.next();" class="place-nav-btn next-place-btn"><i class="fa fa-angle-down"></i></a>
+            <a onclick="$.scrollify.previous();" class="place-nav-btn previous-place-btn"><i class="fa fa-angle-up"></i></a>
+        </div>
     </section>
     <section id="album" class="album-grid album-hidden"></section>
     <section id="album-img-selected" class="album-img-selected album-img-selected-hidden"></section>
@@ -36,18 +39,35 @@
         <a href="https://github.com/arvarghese/travel">
             <i class="fa fa-fw fa-github"></i>
         </a>
-    </span>    
-    <script src="lib/jquery/dist/jquery.min.js">
-    </script> 
-    <script src="lib/jquery-ui/jquery-ui.min.js">
-    </script> 
-    <script src="lib/wow/dist/wow.min.js">
-    </script> 
-    <script src="lib/bootstrap/dist/js/bootstrap.min.js">
-    </script> 
-    <script src="lib/Scrollify/jquery.scrollify.min.js">   
-    </script>    
-    <script src="app.js">
+    </span>
+    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.min.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/Scrollify/jquery.scrollify.min.js"></script>
+    <script src="assets/js/travel.min.js"></script>
+    <script>
+        Travel.initialize();
+        $.scrollify({
+            section: ".place",
+            sectionName: "place-name",
+            interstitialSection: "",
+            easing: "easeInOutQuart",
+            scrollSpeed: 700,
+            offset: 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll: true,
+            before: function () {},
+            after: function () {},
+            afterResize: function () {},
+            afterRender: function () {}
+        });
+        new WOW().init();
     </script>
 </body>
+
 </html>

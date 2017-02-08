@@ -1,0 +1,5 @@
+assets/js/*.min.js
+assets/js/*.spec.js
+assets/lib/
+dist/*
+*.js
