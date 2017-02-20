@@ -60,7 +60,7 @@ let Travel = {
             "transform-origin": ((e.pageX - $(item).offset().left) / $(item).width()) * 100 + "% " + ((e.pageY - $(item).offset().top) / $(item).height()) * 100 + "%"
         });
     },
-    loadAlbumData: (e) => {        
+    loadAlbumData: (e) => {
         $.scrollify.disable();
         Travel.toggleViews();
         Travel.resetAlbum();
@@ -172,7 +172,7 @@ let Travel = {
                 $('.load-more-btn').click();
             }
         });
-        $('.album-img').click((e) => {            
+        $('.album-img').click((e) => {
             if ($(e.target).find('.album-img-overlay').css('display') !== 'none' || true) {
                 return;
             }
@@ -246,7 +246,7 @@ let Travel = {
             }, "slow");
         }
     },
-    loadAlbumImgSelected: (e) => {        
+    loadAlbumImgSelected: (e) => {
         $('#album-img-selected').removeClass('album-img-selected-hidden');
         $('#album-img-selected').append('<div class="selected-img" index="' + $(e.target).attr('album-img-index') + '" style="background: url(' + $(e.target).attr('img-url') + ');"></div>');
         $('#album-img-selected').append('<span class="close-selected-img-btn"><i class="fa fa-close fa-3x"></i></span>');
@@ -271,6 +271,17 @@ let Travel = {
         $('html').removeClass('lock-scroll');
     },
     places: {
+        "miami": {
+            "name": "Miami",
+            "date": "February 18th 2017",
+            "description": "a description",
+            "thumbnail": "http://i.imgur.com/OZSzOBdh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/1V2NW",
+            "albumId": "1V2NW"
+        },
         "frenchpolynesia": {
             "name": "French Polynesia",
             "date": "December 24th 2016",

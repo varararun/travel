@@ -273,6 +273,17 @@ var Travel = {
         $('html').removeClass('lock-scroll');
     },
     places: {
+        "miami": {
+            "name": "Miami",
+            "date": "February 18th 2017",
+            "description": "a description",
+            "thumbnail": "http://i.imgur.com/OZSzOBdh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/1V2NW",
+            "albumId": "1V2NW"
+        },
         "frenchpolynesia": {
             "name": "French Polynesia",
             "date": "December 24th 2016",

@@ -5,3 +5,5 @@ env:
   dev: NODE_ENV=development
 install: npm install
 script: karma start karma.conf.js --single-run
+notifications:
+  email: false
