@@ -165,7 +165,7 @@ h6 {
 
 .place-details {
   width: 100%;
-  max-width: 30em;
+  max-width: 16em;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -218,10 +218,6 @@ h6 {
 
 hr {
   margin: 1em; }
-
-#header > .follow-btn > a > i:hover {
-  -webkit-transform: rotate(360deg) scale(1.2);
-          transform: rotate(360deg) scale(1.2); }
 
 .album-info {
   z-index: 5;
@@ -435,9 +431,7 @@ hr {
 
 .header-hidden {
   opacity: 0;
-  visibility: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%); }
+  visibility: hidden; }
 
 #header > .places-select {
   cursor: pointer;
@@ -458,14 +452,30 @@ hr {
 #header > .places-select > option {
   color: black; }
 
-#header > .follow-btn {
+#header > a > .follow-btn {
   position: fixed;
   right: 0;
   top: 0;
   margin: 0;
   font-size: 2em;
   font-weight: 300;
-  padding: 0.25em .2em; }
+  padding: .25em .2em; }
+  #header > a > .follow-btn:hover i {
+    -webkit-transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2); }
+
+#header > .map-btn {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  padding: .5em .3em; }
+  #header > .map-btn:hover i {
+    -webkit-transform: rotate(360deg) scale(1.2);
+            transform: rotate(360deg) scale(1.2); }
 
 #footer {
   position: fixed;
@@ -531,6 +541,31 @@ hr {
   height: 100%;
   width: 100%;
   background: black; }
+
+#map {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+  #map.map-hidden {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%); }
+  #map .map-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.7);
+    padding: .5em .6em;
+    cursor: pointer;
+    z-index: 5; }
+    #map .map-close-btn:hover {
+      color: white; }
+  #map #mapkit-google-map {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0.1em 0.1em 1em #000; }
 
 @media handheld, (max-width: 768px), (max-height: 461px) {
   .album-img-overlay {

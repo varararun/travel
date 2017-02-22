@@ -12,6 +12,7 @@
     <link href="assets/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/infobox/infobox.css" rel="stylesheet">
     <link href="assets/lib/animate.css/animate.min.css" rel="stylesheet">
 </head>
 
@@ -22,9 +23,13 @@
                 <option value="0">TRAVEL</option>
             </select>
         </span>
-        <span class="follow-btn">
-			<span class="text">Follow me on</span>
-        <a href="https://www.instagram.com/var_arun/"><i class="fa fa-fw fa-lg fa-instagram"></i></a>
+        <a href="https://www.instagram.com/var_arun/">
+            <span class="follow-btn" data-toggle="tooltip" title="Follow Me on Instagram" data-placement="left">			
+                <i class="fa fa-fw fa-lg fa-instagram"></i>            
+            </span>
+        </a>
+        <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="View My Footprint" data-placement="left">   
+            <i class="fa fa-fw fa-lg fa-globe"></i>            
         </span>
     </section>
     <section id="places" class="places-grid">
@@ -35,6 +40,12 @@
     </section>
     <section id="album" class="album-grid album-hidden"></section>
     <section id="album-img-selected" class="album-img-selected album-img-selected-hidden"></section>
+    <section id="map" class="map-hidden">
+        <span class="map-close-btn" onclick="Travel.toggleGoogleMaps();">
+            <i class="fa fa-close fa-3x"></i>
+        </span> 
+        <div id="mapkit-google-map"></div>
+    </section>
     <span id="footer" class="copyright wow fadeInDown hidden">&copy; 2016 by Arun Varghese &nbsp;|
         <a href="https://github.com/arvarghese/travel">
             <i class="fa fa-fw fa-github"></i>
@@ -45,6 +56,8 @@
     <script src="assets/lib/wow/dist/wow.min.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/Scrollify/jquery.scrollify.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAStDllE1ArtDqSjPf0qJEwVvy4ZW31cUs&extension=.js"></script>  
+    <script src="assets/lib/infobox/infobox.js"></script> 
     <script src="assets/js/travel.min.js"></script>
     <script>
         Travel.initialize();
@@ -67,6 +80,7 @@
             afterRender: function () {}
         });
         new WOW().init();
+        $("[data-toggle='tooltip']").tooltip();
     </script>
 </body>
 

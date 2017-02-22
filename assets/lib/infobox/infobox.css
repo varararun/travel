@@ -1,0 +1,233 @@
+.iw-photo {
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.iw-toolbar {
+  background-color: #4285f4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.iw-toolbar + .iw-details {
+  margin-top: 5px;
+}
+
+.iw-toolbar h3 {
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+.iw-toolbar span {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 10px 10px;
+}
+
+.iw-details {
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.iw-details .material-icons {
+  margin-right: 10px;
+}
+
+.iw-list {
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  font-size: 13px;
+  padding: 5px 0 5px 10px;
+}
+
+.iw-list .material-icons.first-material-icons {
+  margin-right: 10px;
+}
+
+.iw-list .toggle-open-hours {
+  margin: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.iw-list ul {
+  margin: 6px 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.iw-list li {
+  color: rgba(0, 0, 0, 0.87);
+  list-style: none;
+  min-height: 22px;
+}
+
+.iw-list li label {
+  cursor: pointer;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.iw-list li strong:first-of-type {
+  display: inline-block;
+  width: 100px;
+}
+
+.iw-list li ul {
+  margin: 0;
+  max-height: 0;
+  max-width: 100%;
+  opacity: 1;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.iw-list input[type=checkbox] {
+  display: none;
+}
+
+.iw-list input[type=checkbox]:checked ~ ul {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
+}
+
+.iw-list input[type=checkbox]:checked ~ .toggle-open-hours {
+  opacity: 0;
+}
+
+h3.iw-x-details {
+  border-top: 1px solid #e6e6e6;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+p.iw-x-details {
+  color: #212121;
+  font-size: 13px;
+}
+
+.iw-x-details {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.iw-desc {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.iw-desc input[type=checkbox] {
+  display: none;
+}
+
+.iw-desc input[type=checkbox]:checked ~ p.iw-x-details {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 1;
+  padding: 5px 10px;
+}
+
+.iw-desc .toggle-open-details {
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+.iw-desc p.iw-x-details {
+  font-weight: 400;
+  margin: 0;
+  max-height: 0;
+  max-width: 100%;
+  opacity: 1;
+  overflow: hidden;
+  padding: 0 10px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.iw-desc .toggle-open-details {
+  position: absolute;
+  right: 0;
+}
+
+.iw-rating {
+  -webkit-background: linear-gradient(to right, #eb6e00 0%, #eb6e00 50%, #f6290c 51%, #e73827 100%);
+  -moz-background: linear-gradient(to right, #eb6e00 0%, #eb6e00 50%, #f6290c 51%, #e73827 100%);
+  -ms-background: linear-gradient(to right, #eb6e00 0%, #eb6e00 50%, #f6290c 51%, #e73827 100%);
+  -o-background: linear-gradient(to right, #eb6e00 0%, #eb6e00 50%, #f6290c 51%, #e73827 100%);
+  background: linear-gradient(to right, #eb6e00 0%, #eb6e00 50%, #f6290c 51%, #e73827 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.infoBox-close {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+.infoBox-close .material-icons {
+  color: #fff;
+}
+
+.infoBox .md-whiteframe-2dp {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+.infoBox .md-subhead {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.010em;
+  line-height: 24px;
+}
+.infoBox .md-body-1 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.010em;
+  line-height: 20px;
+}
+.infoBox .iw-details span {
+  padding-top: 4px;
+  width: 230px;
+  word-wrap: break-word;
+}
+.infoBox .iw-details span a {
+  color: #399bff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=infobox.css.map */
