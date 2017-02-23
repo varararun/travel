@@ -96,10 +96,6 @@ gulp.task('sourcemap-js', function () {
     .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('js', function () {
-  return runSequence('clean-js', 'typescript', 'minify-js', 'sourcemap-js');
-});
-
 /** CSS Tasks **/
 
 gulp.task('clean-css', function () {
@@ -157,6 +153,10 @@ gulp.task('browserSync', function () {
 });
 
 /** Task Flows **/
+
+gulp.task('js', function () {
+  return runSequence('clean-js', 'typescript', 'minify-js', 'sourcemap-js');
+});
 
 gulp.task('css', function () {
   return runSequence('clean-css', 'scss', 'minify-css', 'sourcemap-css');
