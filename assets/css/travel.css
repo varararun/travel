@@ -563,6 +563,9 @@ hr {
   height: 100%;
   width: 100%;
   background-color: black; }
+  #video.loading {
+    -webkit-transition: 0s !important;
+    transition: 0s !important; }
   #video.video-hidden {
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%); }
@@ -588,6 +591,9 @@ hr {
   left: 0;
   height: 100%;
   width: 100%; }
+  #map.loading {
+    -webkit-transition: 0s !important;
+    transition: 0s !important; }
   #map.map-hidden {
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%); }

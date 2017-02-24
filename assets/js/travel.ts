@@ -12,6 +12,8 @@ let Travel = {
         $('.scrolltop-btn').click(Travel.scrollTop);
         $(window).scroll(Travel.scrollListener);
         Travel.loadGoogleMaps();
+        $('#map').removeClass('loading');
+        $('#video').removeClass('loading');
         Travel.loadKeyboardEvents();
     },
     loadKeyboardEvents: () => {

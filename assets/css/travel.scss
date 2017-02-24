@@ -578,6 +578,9 @@ hr {
   height: 100%;
   width: 100%;
   background-color: black;
+  &.loading {
+    transition: 0s !important;
+  }
   &.video-hidden {
     transform: translateY(-150%);
   }
@@ -607,6 +610,9 @@ hr {
   left: 0;
   height: 100%;
   width: 100%;
+  &.loading {
+    transition: 0s !important;
+  }
   &.map-hidden {
     transform: translateY(-150%);
   }
