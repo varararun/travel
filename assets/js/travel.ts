@@ -20,11 +20,15 @@ let Travel = {
                 case 27: // esc					
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
+                    } else if (!$("#video").hasClass("video-hidden")) {
+                        $(".video-close-btn").click();
                     }
                     break;
                 case 8: // delete/backspace					
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
+                    } else if (!$("#video").hasClass("video-hidden")) {
+                        $(".video-close-btn").click();
                     }
                     break;
             }
@@ -287,6 +291,16 @@ let Travel = {
             $('#album-img-selected').empty();
         }, 1000);
         $('html').removeClass('lock-scroll');
+    },
+    toggleFullScreenVideo: () => {
+        $('#video').toggleClass("video-hidden");
+        setTimeout(() => {
+            if ($('#video').hasClass("video-hidden")) {
+                $('#video>video').get(0).load();
+            } else {                
+                $('#video>video').get(0).play();
+            }
+        }, 500);
     },
     toggleGoogleMaps: () => {
         $('#map').toggleClass("map-hidden");

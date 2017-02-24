@@ -483,6 +483,20 @@ hr {
   }
 }
 
+#header>.video-btn {
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  padding: .5em .3em;
+  &:hover i {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
 #footer {
   position: fixed;
   bottom: .5em;
@@ -554,6 +568,36 @@ hr {
   height: 100%;
   width: 100%;
   background: black;
+}
+
+#video {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  &.video-hidden {
+    transform: translateY(-150%);
+  }
+  .video-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(255, 255, 255, .7);
+    padding: .5em .6em;
+    cursor: pointer;
+    z-index: 5;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  #mapkit-google-map {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0.1em 0.1em 1em #000;
+  }
 }
 
 #map {

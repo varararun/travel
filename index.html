@@ -24,12 +24,15 @@
             </select>
         </span>
         <a href="https://www.instagram.com/var_arun/">
-            <span class="follow-btn" data-toggle="tooltip" title="Follow Me on Instagram" data-placement="left">			
+            <span class="follow-btn" data-toggle="tooltip" title="Follow Me!" data-placement="left">			
                 <i class="fa fa-fw fa-lg fa-instagram"></i>            
             </span>
         </a>
-        <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="View My Footprint" data-placement="left">   
+        <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="My Map!" data-placement="left">   
             <i class="fa fa-fw fa-lg fa-globe"></i>            
+        </span>
+        <span class="video-btn" onclick="Travel.toggleFullScreenVideo();" data-toggle="tooltip" title="Highlights!" data-placement="right">   
+            <i class="fa fa-fw fa-lg fa-video-camera"></i>            
         </span>
     </section>
     <section id="places" class="places-grid">
@@ -43,8 +46,17 @@
     <section id="map" class="map-hidden">
         <span class="map-close-btn" onclick="Travel.toggleGoogleMaps();">
             <i class="fa fa-close fa-3x"></i>
-        </span> 
+        </span>
         <div id="mapkit-google-map"></div>
+    </section>
+    <section id="video" class="video-hidden">
+        <span class="video-close-btn" onclick="Travel.toggleFullScreenVideo();">
+            <i class="fa fa-close fa-3x"></i>
+        </span>
+        <video width="100%" height="100%">                        
+            <source src="assets/videos/test.mp4" type="video/mp4">            
+            Your browser does not support the video tag.
+        </video>
     </section>
     <span id="footer" class="copyright wow fadeInDown hidden">&copy; 2016 by Arun Varghese &nbsp;|
         <a href="https://github.com/varararun/travel">
@@ -56,8 +68,8 @@
     <script src="assets/lib/wow/dist/wow.min.js"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/lib/Scrollify/jquery.scrollify.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM90_Oge2c0KtDz4TduKnmijbdijX0kIA&extension=.js"></script>  
-    <script src="assets/lib/infobox/infobox.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM90_Oge2c0KtDz4TduKnmijbdijX0kIA&extension=.js"></script>
+    <script src="assets/lib/infobox/infobox.js"></script>
     <script src="assets/js/travel.min.js"></script>
     <script>
         Travel.initialize();

@@ -21,10 +21,16 @@ var Travel = {
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
                     }
+                    else if (!$("#video").hasClass("video-hidden")) {
+                        $(".video-close-btn").click();
+                    }
                     break;
                 case 8:
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
+                    }
+                    else if (!$("#video").hasClass("video-hidden")) {
+                        $(".video-close-btn").click();
                     }
                     break;
             }
@@ -289,6 +295,17 @@ var Travel = {
             $('#album-img-selected').empty();
         }, 1000);
         $('html').removeClass('lock-scroll');
+    },
+    toggleFullScreenVideo: function () {
+        $('#video').toggleClass("video-hidden");
+        setTimeout(function () {
+            if ($('#video').hasClass("video-hidden")) {
+                $('#video>video').get(0).load();
+            }
+            else {
+                $('#video>video').get(0).play();
+            }
+        }, 500);
     },
     toggleGoogleMaps: function () {
         $('#map').toggleClass("map-hidden");
