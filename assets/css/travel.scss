@@ -464,7 +464,12 @@ hr {
   font-size: 2em;
   font-weight: 300;
   padding: .25em .2em;
+  color: white !important;
+  i {
+    opacity: .6;
+  }
   &:hover i {
+    opacity: 1;
     transform: rotate(360deg) scale(1.2);
   }
 }
@@ -478,7 +483,11 @@ hr {
   font-size: 2em;
   font-weight: 300;
   padding: .5em .3em;
+  i {
+    opacity: .6;
+  }
   &:hover i {
+    opacity: 1;
     transform: rotate(360deg) scale(1.2);
   }
 }
@@ -492,7 +501,11 @@ hr {
   font-size: 2em;
   font-weight: 300;
   padding: .5em .3em;
+  i {
+    opacity: .6;
+  }
   &:hover i {
+    opacity: 1 !important;
     transform: rotate(360deg) scale(1.2);
   }
 }
@@ -648,9 +661,13 @@ hr {
     background: transparent;
   }
   #header>.places-select {
+    opacity: .6;
     left: 0;
     transform: translateX(0);
     text-align: left;
+    &:hover {
+      opacity: 1;
+    }
   }
   .search-visible select {
     width: 75% !important;
