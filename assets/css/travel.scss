@@ -467,6 +467,7 @@ hr {
   color: white !important;
   i {
     opacity: .6;
+    text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
   }
   &:hover i {
     opacity: 1;
@@ -484,6 +485,7 @@ hr {
   font-weight: 300;
   padding: .5em .3em;
   i {
+    text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     opacity: .6;
   }
   &:hover i {
@@ -502,6 +504,7 @@ hr {
   font-weight: 300;
   padding: .5em .3em;
   i {
+    text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     opacity: .6;
   }
   &:hover i {

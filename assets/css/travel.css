@@ -462,7 +462,8 @@ hr {
   padding: .25em .2em;
   color: white !important; }
   #header > a > .follow-btn i {
-    opacity: .6; }
+    opacity: .6;
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); }
   #header > a > .follow-btn:hover i {
     opacity: 1;
     -webkit-transform: rotate(360deg) scale(1.2);
@@ -478,6 +479,7 @@ hr {
   font-weight: 300;
   padding: .5em .3em; }
   #header > .map-btn i {
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     opacity: .6; }
   #header > .map-btn:hover i {
     opacity: 1;
@@ -494,6 +496,7 @@ hr {
   font-weight: 300;
   padding: .5em .3em; }
   #header > .video-btn i {
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
     opacity: .6; }
   #header > .video-btn:hover i {
     opacity: 1 !important;
