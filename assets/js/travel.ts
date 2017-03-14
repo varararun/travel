@@ -427,7 +427,18 @@ let Travel = {
             }
         }
     },
-    places: {
+    places: {        
+        "lakecomo": {
+            "name": "Lake Como",
+            "date": "March 9th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/gozpwAIh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/hHT86",
+            "albumId": "hHT86"
+        },
         "miami": {
             "name": "Miami",
             "date": "February 18th 2017",
