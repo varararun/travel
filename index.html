@@ -31,9 +31,6 @@
         <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="My Map!" data-placement="left">   
             <i class="fa fa-fw fa-lg fa-globe"></i>            
         </span>
-        <span class="video-btn" onclick="Travel.toggleFullScreenVideo();" data-toggle="tooltip" title="Highlights!" data-placement="right">   
-            <i class="fa fa-fw fa-lg fa-video-camera"></i>            
-        </span>
     </section>
     <section id="places" class="places-grid">
         <div class="place-nav-btns hidden">
@@ -48,14 +45,6 @@
             <i class="fa fa-close fa-3x"></i>
         </span>
         <div id="mapkit-google-map"></div>
-    </section>
-    <section id="video" class="video-hidden loading">
-        <span class="video-close-btn" onclick="Travel.toggleFullScreenVideo();">
-            <i class="fa fa-close fa-3x"></i>
-        </span>
-        <video width="100%" height="100%" controls>
-            <source src="assets/videos/2017-miami.mp4" type="video/mp4"> Your browser does not support the video tag.
-        </video>
     </section>
     <span id="footer" class="copyright wow fadeInDown hidden">&copy; 2016 by Arun Varghese &nbsp;|
         <a href="https://github.com/varararun/travel">
@@ -85,18 +74,18 @@
             overflowScroll: true,
             updateHash: true,
             touchScroll: true,
-            before: function () {},
-            after: function () {},
-            afterResize: function () {},
-            afterRender: function () {}
+            before: function() {},
+            after: function() {},
+            afterResize: function() {},
+            afterRender: function() {}
         });
         new WOW().init();
         $("[data-toggle='tooltip']").tooltip();
     </script>
     <script>
-        (function (i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
+            i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
