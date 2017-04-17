@@ -7,5 +7,7 @@
 
 ### Run on Your Local Machine
 ```bash
+$ git clone https://github.com/varararun/travel.git
+$ cd resume
 $ npm start
 ```  

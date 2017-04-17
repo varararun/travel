@@ -406,6 +406,28 @@ var Travel = {
         }
     },
     places: {
+        "lisbon.sintra": {
+            "name": "Lisbon and Sintra",
+            "date": "April 15th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/zy2eHryh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/KEEJR",
+            "albumId": "KEEJR"
+        },
+        "madrid.segovia": {
+            "name": "Madrid and Segovia",
+            "date": "April 13th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/YqWCgJxh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/2ftNC",
+            "albumId": "2ftNC"
+        },
         "lakecomo": {
             "name": "Lake Como",
             "date": "March 9th 2017",
