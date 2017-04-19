@@ -433,11 +433,28 @@ hr {
   opacity: 0;
   visibility: hidden; }
 
+#header > a > .home-btn {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  padding: .25em .2em;
+  color: white !important; }
+  #header > a > .home-btn i {
+    opacity: .6;
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); }
+  #header > a > .home-btn:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
 #header > .places-select {
   cursor: pointer;
   margin: .15em 0em;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   font-size: 2.5em;
   font-weight: 600;
@@ -447,7 +464,7 @@ hr {
   border: none;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  width: 5.7em; }
+  width: 8em; }
 
 #header > .places-select > option {
   color: black; }
@@ -466,8 +483,8 @@ hr {
     text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5); }
   #header > a > .follow-btn:hover i {
     opacity: 1;
-    -webkit-transform: rotate(360deg) scale(1.2);
-            transform: rotate(360deg) scale(1.2); }
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 #header > .map-btn {
   cursor: pointer;
@@ -483,8 +500,8 @@ hr {
     opacity: .6; }
   #header > .map-btn:hover i {
     opacity: 1;
-    -webkit-transform: rotate(360deg) scale(1.2);
-            transform: rotate(360deg) scale(1.2); }
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 #header > .video-btn {
   cursor: pointer;
@@ -500,8 +517,8 @@ hr {
     opacity: .6; }
   #header > .video-btn:hover i {
     opacity: 1 !important;
-    -webkit-transform: rotate(360deg) scale(1.2);
-            transform: rotate(360deg) scale(1.2); }
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 #footer {
   position: fixed;

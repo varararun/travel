@@ -17,10 +17,15 @@
 </head>
 
 <body>
-    <div class="scrolltop-btn scrolltop-btn-hidden"><i class="fa fa-fw fa-4x fa-angle-up"></i></div>
+    <div class="scrolltop-btn scrolltop-btn-hidden" hidden><i class="fa fa-fw fa-4x fa-angle-up"></i></div>
     <section id="header" class="text-center fadeIn">
-        <select class="places-select">
-                <option value="0">TRAVEL</option>
+        <a href="http://avarghese.me/">
+            <span class="home-btn">			
+                <i class="fa fa-fw fa-lg fa-home"></i>            
+            </span>
+        </a>
+        <select class="places-select" data-toggle="tooltip" title="Select a Location!" data-placement="right">
+                <option value="0">MY PLACES</option>
             </select>
         </span>
         <a href="https://www.instagram.com/var_arun/">
@@ -28,7 +33,7 @@
                 <i class="fa fa-fw fa-lg fa-instagram"></i>            
             </span>
         </a>
-        <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="My Map!" data-placement="left">   
+        <span class="map-btn" onclick="Travel.toggleGoogleMaps();" data-toggle="tooltip" title="My Footprint!" data-placement="left">   
             <i class="fa fa-fw fa-lg fa-globe"></i>            
         </span>
     </section>
@@ -79,6 +84,7 @@
             afterResize: function() {},
             afterRender: function() {}
         });
+        // $.scrollify.disable();
         new WOW().init();
         $("[data-toggle='tooltip']").tooltip();
     </script>
