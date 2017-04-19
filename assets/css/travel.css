@@ -454,8 +454,10 @@ hr {
   cursor: pointer;
   margin: .15em 0em;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-size: 2.5em;
   font-weight: 600;
   letter-spacing: .1em;
@@ -464,10 +466,12 @@ hr {
   border: none;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  width: 8em; }
-
-#header > .places-select > option {
-  color: black; }
+  width: 8em;
+  opacity: .6; }
+  #header > .places-select:hover {
+    opacity: 1; }
+  #header > .places-select option {
+    color: black; }
 
 #header > a > .follow-btn {
   position: fixed;
@@ -649,14 +653,6 @@ hr {
     display: none; }
   #header {
     background: transparent; }
-  #header > .places-select {
-    opacity: .6;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    text-align: left; }
-    #header > .places-select:hover {
-      opacity: 1; }
   .search-visible select {
     width: 75% !important; }
   .follow-btn > .text,
@@ -671,4 +667,6 @@ hr {
     height: auto;
     display: initial; }
   .album-info {
-    height: 20em !important; } }
+    height: 20em !important; }
+  .tooltip {
+    display: none !important; } }

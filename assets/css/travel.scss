@@ -459,8 +459,9 @@ hr {
     cursor: pointer;
     margin: .15em 0em;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2.5em;
     font-weight: 600;
     letter-spacing: .1em;
@@ -469,10 +470,13 @@ hr {
     border: none;
     transition: .3s ease-in-out;
     width: 8em;
-}
-
-#header>.places-select>option {
-    color: black;
+    opacity: .6;
+    &:hover {
+        opacity: 1;
+    }
+    option {
+        color: black;
+    }
 }
 
 #header>a>.follow-btn {
@@ -682,15 +686,6 @@ hr {
     #header {
         background: transparent;
     }
-    #header>.places-select {
-        opacity: .6;
-        left: 0;
-        transform: translateX(0);
-        text-align: left;
-        &:hover {
-            opacity: 1;
-        }
-    }
     .search-visible select {
         width: 75% !important;
     }
@@ -710,5 +705,8 @@ hr {
     }
     .album-info {
         height: 20em !important;
+    }
+    .tooltip {
+        display: none !important;
     }
 }
