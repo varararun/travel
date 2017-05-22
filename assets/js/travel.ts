@@ -12,7 +12,7 @@ let Travel = {
         $('.scrolltop-btn').click(Travel.scrollTop);
         $(window).scroll(Travel.scrollListener);
         Travel.loadGoogleMaps();
-        $('#map').removeClass('loading');        
+        $('#map').removeClass('loading');
         Travel.loadKeyboardEvents();
     },
     loadKeyboardEvents: () => {
@@ -21,12 +21,12 @@ let Travel = {
                 case 27: // esc					
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
-                    } 
+                    }
                     break;
                 case 8: // delete/backspace					
                     if (!$("#map").hasClass("map-hidden")) {
                         $(".map-close-btn").click();
-                    } 
+                    }
                     break;
             }
         };
@@ -207,7 +207,7 @@ let Travel = {
         });
     },
     loadNextImage: () => {
-        let index = $('.selected-img').attr('index');
+        let index: any = $('.selected-img').attr('index');
         if (++index > Travel.albumImages.length - 1) {
             index = 0;
         }
@@ -217,7 +217,7 @@ let Travel = {
         $('.selected-img').attr('index', index);
     },
     loadPreviousImage: () => {
-        let index = $('.selected-img').attr('index');
+        let index: any = $('.selected-img').attr('index');
         if (--index < 0) {
             index = Travel.albumImages.length - 1;
         }
@@ -256,7 +256,7 @@ let Travel = {
             $('.scrolltop-btn').addClass('scrolltop-btn-hidden');
         }
     },
-    scrollTop: (quick) => {
+    scrollTop: (quick: boolean = false) => {
         if (!quick) {
             $('body').scrollTop(0);
         } else {
@@ -328,18 +328,14 @@ let Travel = {
                                     } else {
                                         return '';
                                     }
-                                    break;
                                 case 'iw-toolbar':
                                     return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
-                                    break;
                                 case 'div':
                                     switch (part) {
                                         default:
                                             return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' +
                                                 icon + '.svg"/></i><span>' + location[part] + '</span></div>';
-                                            break;
                                     }
-                                    break;
                             }
                         } else {
                             return '';
@@ -412,7 +408,18 @@ let Travel = {
             }
         }
     },
-    places: {        
+    places: {
+        "frenchriviera": {
+            "name": "French Riviera",
+            "date": "May 18th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/xOvzpY9h.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/tzRUW",
+            "albumId": "tzRUW"
+        },
         "lisbon.sintra": {
             "name": "Lisbon and Sintra",
             "date": "April 15th 2017",

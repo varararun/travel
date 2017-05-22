@@ -258,6 +258,7 @@ var Travel = {
         }
     },
     scrollTop: function (quick) {
+        if (quick === void 0) { quick = false; }
         if (!quick) {
             $('body').scrollTop(0);
         }
@@ -329,18 +330,14 @@ var Travel = {
                                     else {
                                         return '';
                                     }
-                                    break;
                                 case 'iw-toolbar':
                                     return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
-                                    break;
                                 case 'div':
                                     switch (part) {
                                         default:
                                             return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' +
                                                 icon + '.svg"/></i><span>' + location[part] + '</span></div>';
-                                            break;
                                     }
-                                    break;
                             }
                         }
                         else {
@@ -406,6 +403,17 @@ var Travel = {
         }
     },
     places: {
+        "frenchriviera": {
+            "name": "French Riviera",
+            "date": "May 18th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/xOvzpY9h.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/tzRUW",
+            "albumId": "tzRUW"
+        },
         "lisbon.sintra": {
             "name": "Lisbon and Sintra",
             "date": "April 15th 2017",
