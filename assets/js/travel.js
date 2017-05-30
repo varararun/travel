@@ -403,6 +403,17 @@ var Travel = {
         }
     },
     places: {
+        "puertavallarta2": {
+            "name": "Puerta Vallarta",
+            "date": "May 27th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/7hs77ZNh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/pemY1",
+            "albumId": "pemY1"
+        },
         "frenchriviera": {
             "name": "French Riviera",
             "date": "May 18th 2017",
@@ -530,8 +541,8 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/08/26/negril.html",
             "albumId": "go1Dc"
         },
-        "puertovallarta": {
-            "name": "Puerto Vallarta",
+        "puertavallarta1": {
+            "name": "Puerta Vallarta",
             "date": "August 20th 2016",
             "description": "a description",
             "thumbnail": "http://i.imgur.com/tI4r2nNh.jpg",
@@ -539,7 +550,7 @@ var Travel = {
             "tags": "resort,mexico,infinitypool",
             "places": "",
             "album": "http://imgur.com/a/t4kRN",
-            "blog": "http://avarghese.me/blog/travel/2016/08/20/puerto-vallarta.html",
+            "blog": "http://avarghese.me/blog/travel/2016/08/20/puerta-vallarta.html",
             "albumId": "t4kRN"
         },
         "chicago": {
