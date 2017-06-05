@@ -409,6 +409,17 @@ let Travel = {
         }
     },
     places: {
+        "toronto": {
+            "name": "Toronto",
+            "date": "June 2nd 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/ey4UrOah.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/vuQsj",
+            "albumId": "vuQsj"
+        },
         "puertavallarta2": {
             "name": "Puerta Vallarta",
             "date": "May 27th 2017",
