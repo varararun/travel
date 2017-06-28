@@ -403,7 +403,40 @@ var Travel = {
         }
     },
     places: {
-        "toronto": {
+        "santorini.2017.06.23": {
+            "name": "Santorini",
+            "date": "June 23rd 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/LLF0MoCh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/jGdDd",
+            "albumId": "jGdDd"
+        },
+        "switzerland.2017.06.20": {
+            "name": "Switzerland",
+            "date": "June 20th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/zv0ZqXih.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/J62R7",
+            "albumId": "J62R7"
+        },
+        "bangalore.2017.06.13": {
+            "name": "Bangalore",
+            "date": "June 13th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/I74VJPph.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/RypVZ",
+            "albumId": "RypVZ"
+        },
+        "toronto.2017.06.02": {
             "name": "Toronto",
             "date": "June 2nd 2017",
             "description": "a description",
@@ -414,7 +447,7 @@ var Travel = {
             "album": "http://imgur.com/a/vuQsj",
             "albumId": "vuQsj"
         },
-        "puertavallarta2": {
+        "puertavallarta.2017.05.27": {
             "name": "Puerta Vallarta",
             "date": "May 27th 2017",
             "description": "a description",
@@ -425,7 +458,7 @@ var Travel = {
             "album": "http://imgur.com/a/pemY1",
             "albumId": "pemY1"
         },
-        "frenchriviera": {
+        "frenchriviera.2017.05.18": {
             "name": "French Riviera",
             "date": "May 18th 2017",
             "description": "a description",
@@ -436,7 +469,7 @@ var Travel = {
             "album": "http://imgur.com/a/tzRUW",
             "albumId": "tzRUW"
         },
-        "lisbon.sintra": {
+        "portugal.2017.04.15": {
             "name": "Lisbon and Sintra",
             "date": "April 15th 2017",
             "description": "a description",
@@ -447,7 +480,7 @@ var Travel = {
             "album": "http://imgur.com/a/KEEJR",
             "albumId": "KEEJR"
         },
-        "madrid.segovia": {
+        "spain.2017.04.13": {
             "name": "Madrid and Segovia",
             "date": "April 13th 2017",
             "description": "a description",
@@ -458,7 +491,7 @@ var Travel = {
             "album": "http://imgur.com/a/2ftNC",
             "albumId": "2ftNC"
         },
-        "lakecomo": {
+        "lakecomo.2017.03.09": {
             "name": "Lake Como",
             "date": "March 9th 2017",
             "description": "a description",
@@ -469,7 +502,7 @@ var Travel = {
             "album": "http://imgur.com/a/hHT86",
             "albumId": "hHT86"
         },
-        "miami": {
+        "miami.2017.02.18": {
             "name": "Miami",
             "date": "February 18th 2017",
             "description": "a description",
@@ -480,7 +513,7 @@ var Travel = {
             "album": "http://imgur.com/a/1V2NW",
             "albumId": "1V2NW"
         },
-        "frenchpolynesia": {
+        "frenchpolynesia.2016.12.24": {
             "name": "French Polynesia",
             "date": "December 24th 2016",
             "description": "a description",
@@ -492,7 +525,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/12/24/french-polynesia.html",
             "albumId": "CzjgH"
         },
-        "phuket": {
+        "phuket.2016.11.22": {
             "name": "Phuket",
             "date": "November 22nd 2016",
             "description": "a description",
@@ -504,7 +537,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/11/19/thailand.html",
             "albumId": "cvkkT"
         },
-        "bangkok": {
+        "bangkok.2016.11.19": {
             "name": "Bangkok",
             "date": "November 19th 2016",
             "description": "a description",
@@ -516,7 +549,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/11/19/thailand.html",
             "albumId": "4OJ0x"
         },
-        "costarica": {
+        "costarica.2016.10.07": {
             "name": "Costa Rica",
             "date": "October 7th 2016",
             "description": "a description",
@@ -528,7 +561,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/10/07/costa-rica.html",
             "albumId": "Mv4CT"
         },
-        "bigsur": {
+        "bigsur.2016.09.23": {
             "name": "Big Sur",
             "date": "September 23rd 2016",
             "description": "a description",
@@ -540,7 +573,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/09/23/big-sur-roadtrip.html",
             "albumId": "V3P0z"
         },
-        "negril": {
+        "negril.2016.08.26": {
             "name": "Negril",
             "date": "August 26th 2016",
             "description": "a description",
@@ -552,7 +585,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/08/26/negril.html",
             "albumId": "go1Dc"
         },
-        "puertavallarta1": {
+        "puertavallarta.2016.08.20": {
             "name": "Puerta Vallarta",
             "date": "August 20th 2016",
             "description": "a description",
@@ -564,7 +597,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/08/20/puerta-vallarta.html",
             "albumId": "t4kRN"
         },
-        "chicago": {
+        "chicago.2016.08.06": {
             "name": "Chicago",
             "date": "August 6th 2016",
             "description": "a description",
@@ -576,7 +609,7 @@ var Travel = {
             "blog": "",
             "albumId": "rCay6"
         },
-        "puertorico": {
+        "puertorico.2016.07.08": {
             "name": "Puerto Rico",
             "date": "July 8th 2016",
             "description": "a description",
@@ -588,7 +621,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/07/08/puerto-rico-trip.html",
             "albumId": "CWr4t"
         },
-        "sanfrancisco": {
+        "sanfrancisco.2016.06.02": {
             "name": "San Francisco",
             "date": "July 2nd 2016",
             "description": "a description",
@@ -600,7 +633,7 @@ var Travel = {
             "blog": "",
             "albumId": "6CEOm"
         },
-        "barcelona": {
+        "barcelona.2016.05.13": {
             "name": "Spain",
             "date": "May 13th 2016",
             "description": "a description",
@@ -612,7 +645,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/05/16/barcelona-spain-trip.html",
             "albumId": "0Wx24"
         },
-        "italy": {
+        "italy.2016.05.04": {
             "name": "Italy",
             "date": "May 4th 2016",
             "description": "a description",
@@ -624,7 +657,7 @@ var Travel = {
             "blog": "http://avarghese.me/blog/travel/2016/05/15/italy-trip.html",
             "albumId": "z7iaO"
         },
-        "colorado": {
+        "colorado.2016.04.09": {
             "name": "Colorado",
             "date": "April 9th 2016",
             "description": "a description",
@@ -636,7 +669,7 @@ var Travel = {
             "blog": "",
             "albumId": "GznDe"
         },
-        "cabosanlucas": {
+        "cabosanlucas.2016.02.06": {
             "name": "Cabo San Lucas",
             "date": "February 6th 2016",
             "description": "a description",
@@ -648,7 +681,7 @@ var Travel = {
             "blog": "",
             "albumId": "of5lB"
         },
-        "saintlucia": {
+        "saintlucia.2015.11.27": {
             "name": "Saint Lucia",
             "date": "November 27th 2015",
             "description": "a description",
@@ -660,7 +693,7 @@ var Travel = {
             "blog": "",
             "albumId": "OZl4l"
         },
-        "cancun": {
+        "cancun.2015.11.13": {
             "name": "Cancun",
             "date": "November 13th 2015",
             "description": "a description",
@@ -672,7 +705,7 @@ var Travel = {
             "blog": "",
             "albumId": "Y1IKS"
         },
-        "vancouver": {
+        "vancouver.2015.09.03": {
             "name": "Vancouver",
             "date": "September 3rd 2015",
             "description": "a description",
@@ -684,7 +717,7 @@ var Travel = {
             "blog": "",
             "albumId": "FrNOL"
         },
-        "paris": {
+        "paris.2015.06.21": {
             "name": "Paris",
             "date": "June 21st 2015",
             "description": "a description",
@@ -696,7 +729,7 @@ var Travel = {
             "blog": "",
             "albumId": "8fFJT"
         },
-        "maldives": {
+        "maldives.2015.06.16": {
             "name": "Maldives",
             "date": "June 16th 2015",
             "description": "a description",
@@ -708,7 +741,7 @@ var Travel = {
             "blog": "",
             "albumId": "AHnS7"
         },
-        "eastcoasts": {
+        "eastcoasts.2015.04.23": {
             "name": "East Coast Roadtrip S",
             "date": "April 23rd 2015",
             "description": "a description",
@@ -720,7 +753,7 @@ var Travel = {
             "blog": "",
             "albumId": "03ibF"
         },
-        "japan": {
+        "japan.2014.12.19": {
             "name": "Japan",
             "date": "December 19th 2014",
             "description": "a description",
@@ -732,7 +765,7 @@ var Travel = {
             "blog": "",
             "albumId": "wF1UV"
         },
-        "eastcoastn": {
+        "eastcoastn.2014.11.08": {
             "name": "East Coast Roadtrip N",
             "date": "November 8th 2014",
             "description": "a description",
@@ -744,7 +777,7 @@ var Travel = {
             "blog": "",
             "albumId": "x8Onv"
         },
-        "newyork": {
+        "newyork.2014.08.30": {
             "name": "New York",
             "date": "August 30th 2014",
             "description": "a description",
@@ -756,7 +789,7 @@ var Travel = {
             "blog": "",
             "albumId": "WJnS3"
         },
-        "cozumel": {
+        "cozumel.2011.01.03": {
             "name": "Cozumel",
             "date": "January 3rd 2011",
             "description": "a description",
@@ -768,7 +801,7 @@ var Travel = {
             "blog": "",
             "albumId": "h8Svy"
         },
-        "abudhabiindia": {
+        "abudhabiindia.2010.05.08": {
             "name": "Abu Dhabi/India",
             "date": "May 8th 2010",
             "description": "a description",
