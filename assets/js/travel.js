@@ -403,6 +403,17 @@ var Travel = {
         }
     },
     places: {
+        "banff.2017.08.04": {
+            "name": "Banff",
+            "date": "August 4th 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/zPN4oEJh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/2FeRZ",
+            "albumId": "2FeRZ"
+        },
         "santorini.2017.06.23": {
             "name": "Santorini",
             "date": "June 23rd 2017",
