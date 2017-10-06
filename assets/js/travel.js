@@ -64,7 +64,8 @@ var Travel = {
                     place.name +
                     '</div>' +
                     '<div class="place-date wow fadeInUp">' + place.date + '</div>' +
-                    '<div class="album-btn wow fadeIn" album-id="' + place.albumId + '">Album</div>' +
+                    '<div class="album-btn wow fadeIn" album-id="' + place.albumId + '">' +
+                    place.name + '</div>' +
                     (place.blog ?
                         '<a href="' + place.blog + '"><div class="blog-btn wow fadeIn">Blog</div></a>' : '') +
                     '<div class="place-index fadeInUp">' + ("[" + index + "/" + Object.keys(Travel.places).length + "]") + '</div>' +
@@ -113,7 +114,7 @@ var Travel = {
             var imgUrl = albumObj.link;
             var thumbnail = albumObj.link;
             thumbnail = thumbnail.replace('.jpg', 'h.jpg');
-            thumbnail = thumbnail.replace('http', 'https');
+            thumbnail = thumbnail.replace('http:', 'https:');
             Travel.loadAlbumImg(i, thumbnail, imgUrl);
         }
         if (Travel.albumImages.length > Travel.maxPage) {
@@ -403,6 +404,17 @@ var Travel = {
         }
     },
     places: {
+        "japan.2017.09.23": {
+            "name": "Japan",
+            "date": "September 23rd 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/hd6K2kbh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/3SsmJ",
+            "albumId": "3SsmJ"
+        },
         "banff.2017.08.04": {
             "name": "Banff",
             "date": "August 4th 2017",
