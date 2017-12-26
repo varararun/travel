@@ -64,8 +64,7 @@ let Travel = {
                 place.name +
                 '</div>' +
                 '<div class="place-date wow fadeInUp">' + place.date + '</div>' +
-                '<div class="album-btn wow fadeIn" album-id="' + place.albumId + '">' +
-                 place.name + '</div>' +
+                '<div class="album-btn wow fadeIn" album-id="' + place.albumId + '">Album</div>' +
                 (place.blog ?
                     '<a href="' + place.blog + '"><div class="blog-btn wow fadeIn">Blog</div></a>' : '') +
                 '<div class="place-index fadeInUp">' + `[${index}/${Object.keys(Travel.places).length}]` + '</div>' +
