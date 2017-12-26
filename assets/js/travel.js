@@ -404,6 +404,17 @@ var Travel = {
         }
     },
     places: {
+        "ambergriscaye.2017.12.23": {
+            "name": "Ambergris Caye",
+            "date": "December 23rd 2017",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/fV93YqQh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/0PRO5",
+            "albumId": "0PRO5"
+        },
         "japan.2017.09.23": {
             "name": "Japan",
             "date": "September 23rd 2017",
