@@ -408,7 +408,18 @@ let Travel = {
             }
         }
     },
-    places: {
+    places: {        
+        "maui.2018.02.08": {
+            "name": "Maui",
+            "date": "February 8th 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/EbRcmSch.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/AM4a4",
+            "albumId": "AM4a4"
+        },
         "ambergriscaye.2017.12.23": {
             "name": "Ambergris Caye",
             "date": "December 23rd 2017",
