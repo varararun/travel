@@ -403,6 +403,28 @@ var Travel = {
         }
     },
     places: {
+        "croation&bosnia.2018.04.01": {
+            "name": "Mostar",
+            "date": "April 1st 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/yNjytzJh.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/nMD43",
+            "albumId": "nMD43"
+        },
+        "mostar.2018.03.29": {
+            "name": "Dubrovnik",
+            "date": "March 29th 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/bQ0i5S1h.jpg",
+            "rank": 2,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/R0jkg",
+            "albumId": "R0jkg"
+        },
         "maui.2018.02.08": {
             "name": "Maui",
             "date": "February 8th 2018",
