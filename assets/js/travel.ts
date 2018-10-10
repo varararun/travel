@@ -409,6 +409,39 @@ let Travel = {
         }
     },
     places: {        
+        "cappadocia.2018.10.06": {
+            "name": "Cappadocia",
+            "date": "Octoper 6th 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/eDoF2Bph.jpg",
+            "rank": 1,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/6I7H8ZM",
+            "albumId": "6I7H8ZM"
+        },
+        "positano&capri.2018.09.29": {
+            "name": "Positano & Capri",
+            "date": "September 9th 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/jCXzZL6h.jpg",
+            "rank": 1,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/vXz94pD",
+            "albumId": "vXz94pD"
+        },
+        "santorini.2018.06.01": {
+            "name": "Santorini",
+            "date": "June 6th 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/67Kdyhlh.jpg",
+            "rank": 1,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/x7rxg1B",
+            "albumId": "x7rxg1B"
+        },
         "croation&bosnia.2018.04.01": {
             "name": "Mostar",
             "date": "April 1st 2018",
