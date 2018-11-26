@@ -409,6 +409,17 @@ let Travel = {
         }
     },
     places: {        
+        "maldives.2018.11.21": {
+            "name": "Maldives",
+            "date": "November 21st 2018",
+            "description": "a description",
+            "thumbnail": "http://imgur.com/rVC053Ph.jpg",
+            "rank": 1,
+            "tags": "",
+            "places": "",
+            "album": "http://imgur.com/a/xXT7uy8",
+            "albumId": "xXT7uy8"
+        },
         "cappadocia.2018.10.06": {
             "name": "Cappadocia",
             "date": "Octoper 6th 2018",
