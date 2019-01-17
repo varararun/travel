@@ -53,7 +53,6 @@ h6 {
 .place,
 .album-img {
   -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
       align-self: stretch;
   overflow: hidden;
   text-align: center;
@@ -117,8 +116,8 @@ h6 {
   height: 100%;
   z-index: 1;
   margin: auto;
-  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.2), black);
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2), black);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.2)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), black);
   text-align: center;
   position: absolute;
   right: 0;
@@ -127,7 +126,8 @@ h6 {
   transition: 0.2s cubic-bezier(0.83, -0.03, 0.54, 0.99);
   color: white !important;
   z-index: 3;
-  box-shadow: 0em 0em 1em 0.2em rgba(0, 0, 0, 0.5); }
+  -webkit-box-shadow: 0em 0em 1em 0.2em rgba(0, 0, 0, 0.5);
+          box-shadow: 0em 0em 1em 0.2em rgba(0, 0, 0, 0.5); }
 
 .place-index {
   font-size: 1.5em;
@@ -179,8 +179,9 @@ h6 {
 .album-btn:hover,
 .close-album-btn:hover,
 .imgur-album-btn:hover {
-  border: 3px solid transparent;
-  box-shadow: 0 0 0.3em transparent;
+  border: 3px solid rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0.3em rgba(0, 0, 0, 0);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: .3s;
@@ -189,6 +190,7 @@ h6 {
 .blog-btn,
 .album-btn {
   border: 3px solid white;
+  -webkit-box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.8);
   padding: .5em;
   margin: .5em auto;
@@ -202,8 +204,8 @@ h6 {
   transition: .3s ease-in-out; }
 
 #header {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), transparent);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   font-size: .8em;
   -webkit-transition: 1s cubic-bezier(0.83, -0.03, 0.54, 0.99);
   transition: 1s cubic-bezier(0.83, -0.03, 0.54, 0.99);
@@ -223,12 +225,12 @@ hr {
   z-index: 5;
   text-align: center;
   -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
       align-self: stretch;
   overflow: hidden;
   text-align: center;
   position: relative;
-  box-shadow: 0.1em 0.1em 0.2em 0em rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0.1em 0.1em 0.2em 0em rgba(0, 0, 0, 0.3);
+          box-shadow: 0.1em 0.1em 0.2em 0em rgba(0, 0, 0, 0.3);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -312,8 +314,7 @@ hr {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: -webkit-radial-gradient(transparent, rgba(0, 0, 0, 0.8));
-  background: radial-gradient(transparent, rgba(0, 0, 0, 0.8));
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   -webkit-transition: 0.2s cubic-bezier(0.83, -0.03, 0.54, 0.99);
   transition: 0.2s cubic-bezier(0.83, -0.03, 0.54, 0.99);
   cursor: pointer; }
@@ -349,7 +350,6 @@ hr {
   margin: auto;
   width: 100%;
   height: 100%;
-  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.4), black);
   background: radial-gradient(rgba(0, 0, 0, 0.4), black);
   z-index: 5;
   overflow-y: scroll;
@@ -616,7 +616,8 @@ hr {
   #video #mapkit-google-map {
     height: 100%;
     width: 100%;
-    box-shadow: 0.1em 0.1em 1em #000; }
+    -webkit-box-shadow: 0.1em 0.1em 1em #000;
+            box-shadow: 0.1em 0.1em 1em #000; }
 
 #map {
   position: fixed;
@@ -644,7 +645,8 @@ hr {
   #map #mapkit-google-map {
     height: 100%;
     width: 100%;
-    box-shadow: 0.1em 0.1em 1em #000; }
+    -webkit-box-shadow: 0.1em 0.1em 1em #000;
+            box-shadow: 0.1em 0.1em 1em #000; }
 
 @media handheld, (max-width: 768px), (max-height: 461px) {
   .album-img-overlay {

@@ -1,9 +1,9 @@
 sudo: required
 language: node_js
-node_js: 5.7.1
+node_js: 11.6.0
 env:
   dev: NODE_ENV=development
 install: npm install
-script: karma start karma.conf.js --single-run
+script: npm test
 notifications:
   email: false
