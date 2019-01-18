@@ -1,0 +1,14 @@
+{
+	"globals": {
+		"$": false,
+		"jQuery": false,
+		"window": false,
+		"document": false,
+		"console": false,
+		"setTimeout": false,
+		"google": false,
+		"images": false,
+		"boxTezxt": false,
+		"InfoBox": false
+	}
+}

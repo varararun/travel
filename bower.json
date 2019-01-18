@@ -1,30 +1,30 @@
 {
-  "name": "avarghese",
-  "homepage": "https://github.com/varararun/varararun.github.io",
-  "authors": [
-    "Arun Varghese <arunv4700@gmail.com>"
-  ],
-  "description": "personal website",
-  "main": "index.html",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "3.3.6",
-    "font-awesome": "4.6.3",
-    "animate.css": "3.5.1",
-    "wow": "1.1.2",
-    "jquery.stellar": "0.6.2",
-    "typed.js": "1.1.4",
-    "Scrollify": "1.0.9",
-    "jquery-ui": "1.12.1"
-  },
-  "resolutions": {
-    "jquery": "1.9.1 - 2"
-  }
+    "name": "avarghese",
+    "homepage": "https://github.com/varararun/varararun.github.io",
+    "authors": [
+        "Arun Varghese <arunv4700@gmail.com>"
+    ],
+    "description": "personal website",
+    "main": "index.html",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "3.3.6",
+        "font-awesome": "4.6.3",
+        "animate.css": "3.5.1",
+        "wow": "1.1.2",
+        "jquery.stellar": "0.6.2",
+        "typed.js": "1.1.4",
+        "Scrollify": "1.0.9",
+        "jquery-ui": "1.12.1"
+    },
+    "resolutions": {
+        "jquery": "1.9.1 - 2"
+    }
 }

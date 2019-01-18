@@ -445,10 +445,12 @@ hr {
     font-weight: 300;
     padding: .25em .2em;
     color: white !important;
+
     i {
         opacity: .6;
         text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     }
+
     &:hover i {
         opacity: 1;
         transform: scale(1.2);
@@ -471,9 +473,11 @@ hr {
     transition: .3s ease-in-out;
     width: 8em;
     opacity: .6;
+
     &:hover {
         opacity: 1;
     }
+
     option {
         color: black;
     }
@@ -488,10 +492,12 @@ hr {
     font-weight: 300;
     padding: .25em .2em;
     color: white !important;
+
     i {
         opacity: .6;
         text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     }
+
     &:hover i {
         opacity: 1;
         transform: scale(1.2);
@@ -507,10 +513,12 @@ hr {
     font-size: 2em;
     font-weight: 300;
     padding: .5em .3em;
+
     i {
         text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
         opacity: .6;
     }
+
     &:hover i {
         opacity: 1;
         transform: scale(1.2);
@@ -526,10 +534,12 @@ hr {
     font-size: 2em;
     font-weight: 300;
     padding: .5em .3em;
+
     i {
         text-shadow: 0 0 .5em rgba(0, 0, 0, .5);
         opacity: .6;
     }
+
     &:hover i {
         opacity: 1 !important;
         transform: scale(1.2);
@@ -617,12 +627,15 @@ hr {
     height: 100%;
     width: 100%;
     background-color: black;
+
     &.loading {
         transition: 0s !important;
     }
+
     &.video-hidden {
         transform: translateY(-150%);
     }
+
     .video-close-btn {
         position: absolute;
         top: 0;
@@ -631,10 +644,12 @@ hr {
         padding: .5em .6em;
         cursor: pointer;
         z-index: 5;
+
         &:hover {
             color: rgba(255, 255, 255, 1);
         }
     }
+
     #mapkit-google-map {
         height: 100%;
         width: 100%;
@@ -649,12 +664,15 @@ hr {
     left: 0;
     height: 100%;
     width: 100%;
+
     &.loading {
         transition: 0s !important;
     }
+
     &.map-hidden {
         transform: translateY(-150%);
     }
+
     .map-close-btn {
         position: absolute;
         top: 0;
@@ -663,10 +681,12 @@ hr {
         padding: .5em .6em;
         cursor: pointer;
         z-index: 5;
+
         &:hover {
             color: rgba(255, 255, 255, 1);
         }
     }
+
     #mapkit-google-map {
         height: 100%;
         width: 100%;
@@ -680,32 +700,40 @@ hr {
     .album-img-overlay {
         display: none;
     }
+
     .link-btn>div {
         display: none;
     }
+
     #header {
         background: transparent;
     }
+
     .search-visible select {
         width: 75% !important;
     }
+
     .follow-btn>.text,
     .copyright,
     span>.text {
         display: none;
     }
+
     .album-grid>div {
         height: auto;
         width: 100%;
     }
+
     .album-img>.img {
         width: 100%;
         height: auto;
         display: initial;
     }
+
     .album-info {
         height: 20em !important;
     }
+
     .tooltip {
         display: none !important;
     }

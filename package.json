@@ -35,7 +35,6 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "@types/jquery": "^3.3.29",
         "bower": "^1.8.0",
         "browser-sync": "^2.26.3",
         "clean-css": "^3.4.21",
@@ -52,7 +51,6 @@
         "gulp-rename": "^1.4.0",
         "gulp-sass": "^4.0.2",
         "gulp-sourcemaps": "^2.6.4",
-        "gulp-typescript": "^5.0.0",
         "gulp-uglify": "^3.0.1",
         "jasmine": "^2.5.3",
         "jshint": "^2.9.7",
@@ -65,7 +63,6 @@
         "nodemon": "^1.11.0",
         "requirejs": "^2.3.2",
         "sass": "^1.16.0",
-        "typescript": "^3.2.2",
         "uglify": "^0.1.5"
     }
 }
