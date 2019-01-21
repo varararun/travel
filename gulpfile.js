@@ -175,8 +175,4 @@ function watch() {
 
 gulp.task('default', gulp.series(minify, serve, watch));
 
-gulp.task('lint', jshintReport);
-
-gulp.task('format', format);
-
 module.exports = gulp;
