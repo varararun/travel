@@ -9,8 +9,6 @@ var Travel = {
         // $('.place').click(Travel.showContent);
         $('.place').on('mousemove', Travel.panImage);
         $('.album-btn').click(Travel.loadAlbumData);
-        $('.scrolltop-btn').click(Travel.scrollTop);
-        $(window).scroll(Travel.scrollListener);
         Travel.loadGoogleMaps();
         $('#map').removeClass('loading');
         Travel.loadKeyboardEvents();
@@ -249,21 +247,10 @@ var Travel = {
         $('#album').toggleClass('album-hidden');
         $('#places').toggleClass('places-hidden');
     },
-    scrollListener: function(event) {
-        if ($(window).scrollTop() > 100) {
-            $('.scrolltop-btn').removeClass('scrolltop-btn-hidden');
-        } else {
-            $('.scrolltop-btn').addClass('scrolltop-btn-hidden');
-        }
-    },
-    scrollTop: function(quick) {
-        if (!quick) {
-            $('body').scrollTop(0);
-        } else {
-            $('body').animate({
-                scrollTop: 0
-            }, "slow");
-        }
+    scrollTop: function() {
+        setTimeout(function() {
+            document.documentElement.scrollTop = 0;
+        }, 1000);
     },
     loadAlbumImgSelected: function(e) {
         $('#album-img-selected').removeClass('album-img-selected-hidden');
